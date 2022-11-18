@@ -1,0 +1,32 @@
+.dragListContainer {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.dragListContainer * {
+  box-sizing: border-box;
+}
+
+.dragListContainer .list-element {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.dragListContainer .list-item {
+  cursor: grab;
+  background-color: #F4F5F7;
+}
+
+.dragListContainer .list-item:nth-child(even) {
+  background-color: #fff;
+}
+
+.dragListContainer .list-item:hover {
+  background: #e1e1e1;
+}
+
+.dragListContainer .list-item.optionDisabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
